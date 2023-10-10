@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/oxfordblue"
+    tools:context=".bank_edit">
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Bank Account"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/teal_200"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView3"
+        app:layout_constraintStart_toStartOf="@+id/scrollView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/scroll_view"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="You can edit your bank account information below"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/ed_rout"
+                app:layout_constraintStart_toStartOf="@+id/ed_rout"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:text="Routing Number"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/ed_rout"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/ed_rout"
+                app:layout_constraintTop_toBottomOf="@+id/textView20"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/ed_rout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/text_view"
+                android:hint="Please Enter"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="#95ffffff"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView22"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Account Number"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/ed_accou"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView22"
+                app:layout_constraintTop_toBottomOf="@+id/ed_rout"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/ed_accou"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_view"
+                android:hint="Please Enter"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="#95ffffff"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/ed_rout"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/ed_rout"
+                app:layout_constraintTop_toBottomOf="@+id/textView24"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Confirm Account Number"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/ed_conf"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView24"
+                app:layout_constraintTop_toBottomOf="@+id/ed_accou"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/ed_conf"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_view"
+                android:hint="Please Enter"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="#95ffffff"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/ed_accou"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/ed_accou"
+                app:layout_constraintTop_toBottomOf="@+id/textView26"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/ed_but"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/button"
+                android:text="CONFIRM"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/ed_conf"
+                app:layout_constraintStart_toStartOf="@+id/ed_conf"
+                app:layout_constraintTop_toBottomOf="@+id/ed_conf"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
